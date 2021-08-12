@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ countries }) {
@@ -13,7 +14,7 @@ export default function Home({ countries }) {
                 <a>{name}</a>
               </Link>
               <div>
-                <img
+                <Image
                   src={flag}
                   alt={name}
                   style={{ width: "100px", padding: "10px" }}

@@ -1,9 +1,15 @@
+import Image from "next/image";
+
 export default function Country({ country }) {
   const { name, flag } = country;
   return (
     <div style={{ textAlign: "center" }}>
       <h3>{name}</h3>
-      <img src={flag} alt={name} style={{ width: "400px", padding: "10px" }} />
+      <Image
+        src={flag}
+        alt={name}
+        style={{ width: "400px", padding: "10px" }}
+      />
     </div>
   );
 }
